@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Css Grid</title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div class="grid-container">
+        
+        <header class="header" >
+            <div class="brand" >
+                <button type="button"  onclick=openMenu()>
+                    &#9776;
+                </button>
+            </div >
+            <ul>
+            <li >Home&nbsp;&nbsp;
+                <ul class="submenu" > 
+                    <li ><a href="home.html" >Titre 1</a></li>
+                    <li id="homescreen" >Titre 2</li>
+                    <li>Titre 3</li>
+                    
+                </ul>
+            </li>
+            <li> About&nbsp;&nbsp;
+                <ul class="submenu" > 
+                   <a href="About.html"></a> <li  >Titre 1</li>
+                    <li>Titre 2</li>
+                    <li>Titre 3</li>
+                </ul>
+            </li> 
+            <li>Services&nbsp;&nbsp;
+                <ul class="submenu" > 
+                    <li>Titre 1</li>
+                    <li>Titre 2</li>
+                    <li>Titre 3</li>
+                </ul>
+            </li>
+            <li> Clients&nbsp; 
+                <ul class="submenu" > 
+                    <li>Titre 1</li>
+                    <li>Titre 2</li>
+                    <li>Titre 3</li>
+                </ul> </li>
+                <li>
+                    <ul class="avatar_menu"  >
+                        <li> <img onclick="document.getElementById('id01').style.display='block'" class="avatar-profile" id="img" src="selfi.jpeg"   ></img></li>
+                      <ul class="avatar-profile" id="avatar_submenu" >
+                          
+                        </ul> 
+                    </ul>
+                </li>
+                <!-- <img class=".img" src="selfi.jpeg" width="50px" ></img> -->
+            </ul>
+            <div class="avatar-profile" >
+           
+          
+        </div>
+
+        </header>
+
+      <main class="grid-main" >
+   
+   <div class="box">Junior JS motivated for a new challenge.<br>
+    Love site creation and open to work.<br> Seriously and perceiving
+    </div>
+
+<p class="box" > 
+ 
+    Skills<br>
+    ➢ HTML5/CSS3, <br>
+    ➢ JavaScript,<br>
+    ➢ Node.JS,<br>
+    ➢ React,<br>
+    ➢ GitHub,<br>
+    ➢ SQL, DB jQuery, Bootstrap<br>
+    ➢ Problem-solver<br>
+    ➢ Detail Oriented<br>
+    ➢ Communication<br>
+    ➢ Schedule coordination</p>
+
+</main>
+   <footer class="grid-oter" > 
+       <!-- <img id="p1" class="box" src="Suisse.jpeg" width="100px" height="30px" ></img> -->
+        <img class="box1" src="Suisse2.jpeg" width="60px" ></img> 
+       <img  class="box1" src="Suisse3.jpeg" width="60px" ></img>
+       <img class="box1" src="Suisse4.jpeg" width="60px" ></img>
+       <img class="box1"src="Suisse.jpeg" width="60px" ></img>
+     
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/home.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="selfi.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+       
+   </footer>
+   <footer class="box2" >All right reserved by &#169;</footer>
+    <!-- <footer class="box" >D'B'Z</footer> -->
+   
+        <aside class="sidebar">
+            <h3>Css Grid</h3>
+            <button class="sidebar-close-button" 
+            onclick=closeMenu()>X</button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li> <a href="#">Clients</a></li>
+                <li>
+                    <a href="#">Contact</a>
+                </li> 
+                <br><br>
+               <a href="login.html"><img class="img" src="selfi.jpeg" /></a> 
+               
+                   
+                 
+              
+            </ul>
+        </aside>
+    </div>
+
+    <script  src="grid.js"></script>
+    <!-- <script type="module" src="server.js"></script> -->
+    
+    
+</body>
+</html>
